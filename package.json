@@ -1,0 +1,23 @@
+{
+  "name": "nodeapplication",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karthikgou/nodeApplication.git"
+  },
+  "author": "Karthik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karthikgou/nodeApplication/issues"
+  },
+  "homepage": "https://github.com/karthikgou/nodeApplication#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6"
+  }
+}

@@ -1,0 +1,220 @@
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+    width: 1170px;
+}
+.container:after {
+    clear: both;
+}
+.container:before, .container:after {
+    content: " ";
+    display: table;
+}
+.container>.navbar-collapse, .container-fluid>.navbar-header, .container-fluid>.navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.navbar-header {
+    float: left;
+}
+.navbar-header:before, .navbar-header:after {
+    content: " ";
+    display: table;
+}
+.navbar-header:after {
+    clear: both;
+}
+
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height: 340px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+}
+.navbar-collapse {
+    width: auto;
+    border-top: 0;
+    box-shadow: none;
+}
+.navbar-right {
+    float: right !important;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.navbar-nav {
+    float: left;
+    margin: 0;
+}
+.nav {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.navbar-nav>li {
+    float: left;
+}
+
+.nav>li {
+    position: relative;
+    display: block;
+}
+
+.navbar-nav>li>a {
+    padding-top: 18.5px;
+    padding-bottom: 18.5px;
+    color: #666;
+    line-height: 42px;
+    padding-right: 15px;
+        padding-left: 15px;
+        font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+        text-decoration: none;
+}
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+.navbar-right .dropdown-menu {
+    right: 0;
+    left: auto;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 30%);
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 15px;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 3px;
+    background-clip: padding-box;
+}
+
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.846;
+    color: #666;
+    white-space: nowrap;
+    text-decoration: none;
+    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid \9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.toggleDropDown {
+display: block;
+}
+
+.dropdown-menu .divider {
+    height: 1px;
+    margin: 12.5px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+
+#########
+.navbar {
+    border: none;
+    -webkit-box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+}
+.navbar-default {
+    background-color: #fff;
+    border-color: transparent;
+}
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+}
+.navbar-fixed-top, .navbar-fixed-bottom {
+    border-radius: 0;
+}
+.navbar-fixed-top, .navbar-fixed-bottom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.navbar {
+    position: relative;
+    min-height: 64px;
+    margin-bottom: 27px;
+    border-bottom: 2px solid rgba(255,255,255,.5);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+.navbar:before, .navbar:after {
+    content: " ";
+    display: table;
+}
+.navbar:after {
+    clear: both;
+}
+
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height: 340px;
+}
+*[id]:before {
+    display: block;
+    content: " ";
+    margin-top: -75px;
+    height: 75px;
+    visibility: hidden;
+}
+.navbar-collapse:after {
+    clear: both;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+}
+
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height: 340px;
+}
+.navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+}
+.navbar-collapse {
+    width: auto;
+    border-top: 0;
+    box-shadow: none;
+}
