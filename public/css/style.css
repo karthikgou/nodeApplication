@@ -318,21 +318,27 @@ div.right-container {
 
 .right-container{
     padding: 10px 30px 0px 30px;
+     #font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-
+.commonBackgroundImage {
+    background-image: linear-gradient(to bottom right,var(--tw-gradient-stops));
+        --tw-gradient-to: hsla(31,97%,72%,.1);
+        --tw-gradient-from: hsla(31,97%,72%,0);
+        --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
+}
 
 
 .left-container li{
    list-style: none;
    padding: 15px 0px;
    text-align: center;
-   background: linear-gradient(45deg, black, transparent);
+   #background: linear-gradient(45deg, black, transparent);
 }
 
 .left-container a{
    text-decoration: none;
-   color: white;
+   color: #000000;
 }
 
 
@@ -345,4 +351,8 @@ div.right-container {
      font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
      margin-bottom: auto;
 
+}
+div.positionSticky{
+    position: sticky;
+    top: 0;
 }
