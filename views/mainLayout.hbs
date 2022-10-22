@@ -81,12 +81,18 @@
         </div>
     </div>
 </nav>
+
 <div class="mainContainer">
     <div class="left-container commonBackgroundImage">
         {{> leftnav}}
     </div>
-    <div class="content-container">
-        {{> content}}
+    <div class="content-container contentStyles">
+        {{#if manualMode}}
+            {{> content}}
+        {{else}}
+        {{{contentText}}}
+
+        {{/if}}
     </div>
     <div class="right-container commonBackgroundImage">
         {{> rightRail}}
