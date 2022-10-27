@@ -6,6 +6,10 @@ $('.dropdown-toggle').click(function (event) {
 	$(this).next().addClass('active');
 });
 
+$('.refine-name').click(function (event) {
+    $(this).parent().toggleClass('active');
+});
+
 $( document ).ready(function() {
     // construct right navigation links with header tags
     var htmlContent = "<ul>";

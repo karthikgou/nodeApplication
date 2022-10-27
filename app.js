@@ -55,7 +55,6 @@ app.use(express.static('public/'))
 
 const wiki = require("./Controllers/singleCellAnalysis.js");
 
-
 app.use('/', wiki);
 
 const port = process.env.PORT || 3000;
