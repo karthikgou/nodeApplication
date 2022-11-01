@@ -5,30 +5,28 @@
 
 
 <script type="module">
-      import {Uppy, Dashboard, Tus, StatusBar, Informer, Webcam, GoogleDrive, Dropbox, Instagram, Facebook, OneDrive, ScreenCapture, ImageEditor, DropTarget, GoldenRetriever, XHRUpload} from "https://releases.transloadit.com/uppy/v3.0.1/uppy.min.mjs"
-      var uppy = new Uppy()
+      import {Uppy, Dashboard, Tus, StatusBar, Informer, Webcam, GoogleDrive, Dropbox, Instagram, Facebook, OneDrive, ScreenCapture, ImageEditor, DropTarget, GoldenRetriever, XHRUpload, AwsS3} from "https://releases.transloadit.com/uppy/v3.1.1/uppy.min.mjs"
+
+      var uppy = new Uppy({debug: true, autoProceed: false})
         .use(Dashboard, {
           inline: true,
           target: '#drag-drop-area'
         })
         .use(GoogleDrive, { target: Dashboard, companionUrl: 'http://localhost:3020' })
-.use(Dropbox, { target: Dashboard, companionUrl: 'https://companion.uppy.io' })
-.use(Instagram, { target: Dashboard, companionUrl: 'https://companion.uppy.io' })
-.use(Facebook, { target: Dashboard, companionUrl: 'https://companion.uppy.io' })
-.use(OneDrive, { target: Dashboard, companionUrl: 'https://companion.uppy.io' })
+.use(Dropbox, { target: Dashboard, companionUrl: 'http://localhost:3020' })
+.use(Instagram, { target: Dashboard, companionUrl: 'http://localhost:3020' })
+.use(Facebook, { target: Dashboard, companionUrl: 'http://localhost:3020' })
+.use(OneDrive, { target: Dashboard, companionUrl: 'http://localhost:3020' })
 .use(Webcam, { target: Dashboard })
 .use(ScreenCapture, { target: Dashboard })
 .use(ImageEditor, { target: Dashboard })
-//.use(Tus, { endpoint: 'https://tusd.tusdemo.net/files/' })
-.use(XHRUpload, {
-    endpoint: 'http://localhost:3000/image' ,
-    fieldName: 'photo',
-    formData: true,
+.use(AwsS3, {
+  companionUrl: 'http://localhost:3020',
 })
+//.use(Tus, { endpoint: 'https://tusd.tusdemo.net/files/' })
 .use(DropTarget, {target: document.body })
 .use(GoldenRetriever)
 .on('complete', result => {
-document.location.reload();
 console.log('successful files:', result.successful)
 console.log('failed files:', result.failed)
 })
