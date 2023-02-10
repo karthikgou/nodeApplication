@@ -66,52 +66,7 @@ app.use(express.static('public/'))
 const wiki = require("./Controllers/singleCellAnalysis.js");
 
 // initialize uppy
-const companionOptions = {
-  providerOptions: {
-    drive: {
-      key: '586134598850-6cbp6nghnovlj1hlt5qvgg82p5ei7evm.apps.googleusercontent.com',
-      secret: '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',
-    },
-    instagram: {
-      key: '619293279981092',
-      secret: '35fa7d240c1586e5eb94371911fd0182',
-    },
-    dropbox: {
-      key: '2ylh7cmi8fvh3wk',
-      secret: '20byyrz4usxwoxz',
-    },
-    box: {
-      key: 'your box key',
-      secret: 'your box secret',
-    },
-    facebook: {
-      key: 'your box key',
-      secret: 'your box secret',
-    },
-    onedrive: {
-      key: 'f85bb582-efc7-4b3e-8d2b-96319b3dbd48',
-      secret: 'f8cdef31-a31e-4b4a-93e4-5f571e91255a',
-    },
-    // you can also add options for additional providers here
-  },
-   s3: {
-      getKey: (req, filename, metadata) => `${crypto.randomUUID()}-${filename}`,
-      key: 'AKIAXAK6FJSJZ3PO7XXL',
-      secret: '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',
-      bucket: 'cluster-user-bucket',
-      region: 'us-east-2',
-      useAccelerateEndpoint: false, // default: false,
-      expires: 3600, // default: 300 (5 minutes)
-      acl: 'private', // default: none
-   },
-  server: {
-    host: 'localhost:3020',
-    protocol: 'http',
-  },
-  filePath: './output',
-  secret: 'some-secret',
-  debug: true,
-}
+
 const { app: companionApp } = companion.app(companionOptions)
 app.use(companionApp)
 
